@@ -1,0 +1,10 @@
+{
+  "name": "azure-swa-demo",
+  "version": "1.0.0",
+  "description": "Demo for showcasing a simple React based SPA and backend API deployed to SWA.",
+  "author": "Masi Malmi",
+  "license": "ISC",
+  "scripts": {
+    "build": "cd client && npm install && npm run build"
+  }
+}
