@@ -22,9 +22,25 @@ npm install -g @azure/static-web-apps-cli
 
 ### Running locally from Azure Static Web Apps emulator
 
+#### Against local build
+
 ```
 npm run build
 swa start client/build --api-location api
+```
+
+#### Against dev server
+
+In another terminal:
+
+```
+npm run start
+```
+
+In main terminal:
+
+```
+swa start http://localhost:3000/ --api-location api
 ```
 
 #### Test API

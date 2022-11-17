@@ -5,6 +5,7 @@
   "author": "Masi Malmi",
   "license": "ISC",
   "scripts": {
-    "build": "cd client && npm install && npm run build"
+    "build": "cd client && npm install && npm run build",
+    "start": "cd client && npm install && npm run start"
   }
 }
