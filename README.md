@@ -9,6 +9,7 @@ Combines a couple of examples from the MS docs
 
 ## Prerequisites
 
+- [Azure CLI](https://learn.microsoft.com/en-us/cli/azure/install-azure-cli)
 - [Azure Functions Core Tools](https://learn.microsoft.com/en-us/azure/azure-functions/functions-run-local)
 - [SWA CLI](https://azure.github.io/static-web-apps-cli/docs/use/install)
 
@@ -44,7 +45,10 @@ az group create \
   --name my-swa-group \
   --location "westeurope"
 
-az staticwebapp create -n swa-demo-app -g my-swa-group
+az staticwebapp create \
+  --name swa-demo-app \
+  --resource-group my-swa-group \
+  --location "westeurope"
 
 swa deploy client/build --api-location ./api --app-name swa-demo-app
 ```
